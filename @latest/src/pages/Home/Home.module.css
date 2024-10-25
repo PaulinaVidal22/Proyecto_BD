@@ -1,0 +1,71 @@
+.page {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+}
+
+.header {
+    grid-row: 1;
+}
+
+.footer {
+    grid-row: 3;
+}
+
+.homePageContainer {
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(10, 1fr);
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('/background-homepage.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+
+.welcomeSign {
+    grid-column: 2 / 6;
+    grid-row: 3 / 5;
+    width: 60%; 
+    max-width: 450px; 
+    height: auto; 
+    margin-left: 2%; 
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.welcomeSign img {
+    width: 100%; 
+    height: auto;
+    object-fit: contain; 
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1; 
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+ 
+
+
+
